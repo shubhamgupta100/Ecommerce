@@ -1,5 +1,6 @@
 const express = require("express");
 const dotenv = require("dotenv");
+const cookieParser = require("cookie-parser");
 const errorMiddleware = require("./middleware/error");
 
 const app = express();
@@ -14,6 +15,7 @@ process.on("uncaughtException", (err) => {
 });
 
 app.use(express.json());
+app.use(cookieParser());
 app.use("/", require("./routes/index"));
 app.use(errorMiddleware);
 
