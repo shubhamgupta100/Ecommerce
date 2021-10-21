@@ -19,7 +19,7 @@ const {
   authorizeRoles,
 } = require("../../../middleware/auth");
 router.post("/user/register", register);
-router.post("/user//login", login);
+router.post("/user/login", login);
 router.get("/user/logout", logout);
 router.post("/user/password/forgot", forgetPassword);
 router.put("/user/password/reset/:token", resetPassword);
