@@ -11,7 +11,7 @@ module.exports.isAuthenticatedUser = catchAsyncErrors(
     }
     const decodedData = jwt.verify(token, process.env.JWT_SECRET_KEY);
     req.user = await User.findById(decodedData.id);
-    console.log(req.user.role);
+    // console.log(req.user.role);
     next();
   }
 );
