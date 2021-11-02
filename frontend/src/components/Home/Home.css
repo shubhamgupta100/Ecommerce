@@ -12,14 +12,14 @@
 .container {
   display: flex;
   margin: 2vmax auto;
-  width: 80vw;
+  width: 90vw;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 100%;
 }
 
 .productCard {
-  width: 14vmax;
+  width: 16vmax;
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -27,10 +27,14 @@
   margin: 2vmax;
   transition: all 0.5s;
   padding-bottom: 0.5vmax;
+  border: 1px solid whitesmoke;
+  border-radius: 15px;
 }
 
 .productCard > img {
-  width: 14vmax;
+  width: 16vmax;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .productCard > div {
@@ -60,7 +64,7 @@
 }
 
 .productCard:hover {
-  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+  box-shadow: 0 0 1px rgba(15, 15, 15, 0.26);
 
   transform: translateY(-1vmax);
 }
