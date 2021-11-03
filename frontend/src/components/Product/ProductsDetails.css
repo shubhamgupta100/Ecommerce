@@ -8,10 +8,11 @@
 }
 
 .ProductDetails > div {
-  width: 100%;
+  width: 100% !important;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  /* align-items: center; */
   padding: 2vmax;
   box-sizing: border-box;
   border: 1px solid white;
@@ -22,6 +23,8 @@
 }
 
 .CarouselImage {
+  position: relative;
+  left: 25%;
   width: 20vmax;
   border-radius: 10px;
 }
@@ -174,6 +177,7 @@
   align-items: center;
   margin: 1vmax;
   padding: 3vmax;
+  border-radius: 5px;
 }
 .reviewCard > img {
   width: 5vmax;

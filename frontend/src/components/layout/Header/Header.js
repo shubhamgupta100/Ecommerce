@@ -25,15 +25,11 @@ export default function Header() {
             </Link>
 
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              {/* <li className="nav-item">
-                <Link className="nav-link">Dashboard</Link>
-              </li>
               <li className="nav-item">
-                <Link className="nav-link">Team</Link>
+                <Link className="nav-link" to="/products">
+                  Products
+                </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link">Projects</Link>
-              </li> */}
             </ul>
           </div>
           <div className="d-flex align-items-center">

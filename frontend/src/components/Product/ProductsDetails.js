@@ -1,6 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
 import Carousel from "react-material-ui-carousel";
-import "./ProductsDetails.css";
 import { useSelector, useDispatch } from "react-redux";
 import {
   clearErrors,
@@ -21,6 +20,7 @@ import {
 } from "@material-ui/core";
 import { Rating } from "@material-ui/lab";
 import { NEW_REVIEW_RESET } from "../../actions/actionType";
+import "./ProductsDetails.css";
 
 const ProductsDetails = ({ match }) => {
   const dispatch = useDispatch();
@@ -112,7 +112,7 @@ const ProductsDetails = ({ match }) => {
                 {product.images &&
                   product.images.map((item, i) => (
                     <img
-                      className="CarouselImage"
+                      className="  CarouselImage"
                       key={i}
                       src={item.url}
                       alt={`${i} Slide`}
