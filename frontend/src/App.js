@@ -26,6 +26,7 @@ function App() {
         <Route exact path="/products" component={Products} />
         <Route exact path="/products/:keyword" component={Products} />
         <Route exact path="/search" component={Search} />
+        <Route exact path="/login" component={LoginSignUp} />
       </Router>
     </>
   );

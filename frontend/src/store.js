@@ -9,6 +9,7 @@ import {
   reviewReducer,
 } from "./reducers/productReducer";
 import { cartReducer } from "./reducers/cartReducer";
+import { userReducer } from "./reducers/userReducer";
 
 const reducer = combineReducers({
   products: productsReducer,
@@ -17,6 +18,7 @@ const reducer = combineReducers({
   newReview: newReviewReducer,
   productReviews: productReviewsReducer,
   review: reviewReducer,
+  user: userReducer,
 });
 
 let initialState = {};
