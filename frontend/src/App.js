@@ -10,6 +10,8 @@ import Search from "./components/Product/Search.js";
 import LoginSignUp from "./components/User/LoginSignUp";
 import store from "./store";
 import { loadUser } from "./actions/userAction";
+import Profile from "./components/User/Profile";
+import ProtectedRoute from "./components/Route/ProtectedRoute";
 
 function App() {
   React.useEffect(() => {
@@ -29,6 +31,7 @@ function App() {
         <Route exact path="/products" component={Products} />
         <Route exact path="/products/:keyword" component={Products} />
         <Route exact path="/search" component={Search} />
+        <ProtectedRoute exact path="/profile" component={Profile} />
         <Route exact path="/login" component={LoginSignUp} />
       </Router>
     </>

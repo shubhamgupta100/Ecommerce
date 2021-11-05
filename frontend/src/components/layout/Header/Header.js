@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { loadUser, logout } from "../../../actions/userAction";
 import { useAlert } from "react-alert";
-export default function Header() {
+import "./Header.css";
+export default function Header({ history }) {
   const dispatch = useDispatch();
   const alert = useAlert();
   const { isAuthenticated, user } = useSelector((state) => state.user);
@@ -40,7 +41,7 @@ export default function Header() {
 
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link" to="/products">
+                <Link className="nav-link color" to="/products">
                   Products
                 </Link>
               </li>
@@ -53,11 +54,11 @@ export default function Header() {
             {isAuthenticated ? (
               <>
                 {user.role === "admin" && (
-                  <Link className="nav-link" to="/dashboard">
+                  <Link className="nav-link color" to="/dashboard">
                     Dashboard
                   </Link>
                 )}
-                <Link className="nav-link" to="/orders">
+                <Link className="nav-link color" to="/orders">
                   Orders
                 </Link>
                 <Link
@@ -70,7 +71,7 @@ export default function Header() {
                 >
                   <img
                     src={user.avatar.url}
-                    className="rounded-circle"
+                    className="rounded-circle profile_image "
                     height="25"
                     alt=""
                     loading="lazy"
