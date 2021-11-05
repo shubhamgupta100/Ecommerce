@@ -8,6 +8,8 @@ import ProductsDetails from "./components/Product/ProductsDetails";
 import Products from "./components/Product/Products.js";
 import Search from "./components/Product/Search.js";
 import LoginSignUp from "./components/User/LoginSignUp";
+import store from "./store";
+import { loadUser } from "./actions/userAction";
 
 function App() {
   React.useEffect(() => {
@@ -16,6 +18,7 @@ function App() {
         families: ["Droid Sans", "Droid Serif", "Roboto"],
       },
     });
+    store.dispatch(loadUser());
   }, []);
   return (
     <>
