@@ -13,6 +13,7 @@ import { loadUser } from "./actions/userAction";
 import Profile from "./components/User/Profile";
 import ProtectedRoute from "./components/Route/ProtectedRoute";
 import UpdateProfile from "./components/User/UpdateProfile";
+import UpdatePassword from "./components/User/UpdatePassword";
 
 function App() {
   React.useEffect(() => {
@@ -34,6 +35,11 @@ function App() {
         <Route exact path="/search" component={Search} />
         <ProtectedRoute exact path="/profile" component={Profile} />
         <ProtectedRoute exact path="/me/update" component={UpdateProfile} />
+        <ProtectedRoute
+          exact
+          path="/updatePassword"
+          component={UpdatePassword}
+        />
         <Route exact path="/login" component={LoginSignUp} />
       </Router>
     </>
