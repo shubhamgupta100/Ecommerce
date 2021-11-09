@@ -12,6 +12,7 @@ import store from "./store";
 import { loadUser } from "./actions/userAction";
 import Profile from "./components/User/Profile";
 import ProtectedRoute from "./components/Route/ProtectedRoute";
+import UpdateProfile from "./components/User/UpdateProfile";
 
 function App() {
   React.useEffect(() => {
@@ -32,6 +33,7 @@ function App() {
         <Route exact path="/products/:keyword" component={Products} />
         <Route exact path="/search" component={Search} />
         <ProtectedRoute exact path="/profile" component={Profile} />
+        <ProtectedRoute exact path="/me/update" component={UpdateProfile} />
         <Route exact path="/login" component={LoginSignUp} />
       </Router>
     </>

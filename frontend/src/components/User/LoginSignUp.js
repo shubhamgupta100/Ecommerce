@@ -38,6 +38,7 @@ const LoginSignUp = ({ history, location }) => {
   const loginSubmit = (e) => {
     e.preventDefault();
     dispatch(login(loginEmail, loginPassword));
+    alert.success("Login Successfully!");
   };
 
   const registerSubmit = (e) => {
