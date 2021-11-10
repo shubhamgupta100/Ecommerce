@@ -47,7 +47,7 @@ const ProductsDetails = ({ match }) => {
   const [comment, setComment] = useState("");
 
   const increaseQuantity = () => {
-    if (product.Stock <= quantity) return;
+    if (product.stock <= quantity) return;
 
     const qty = quantity + 1;
     setQuantity(qty);
