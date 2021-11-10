@@ -51,7 +51,9 @@ export default function Header({ history }) {
           <div className="d-flex align-items-center">
             <Link className="text-reset me-3" to="/cart">
               <i className="fas fa-shopping-cart"></i>
-              <span className="cart_Item">{cartItems.length}</span>
+              <span className="cart_Item">
+                {cartItems.length > 0 ? cartItems.length : ""}
+              </span>
             </Link>
             {isAuthenticated ? (
               <>
