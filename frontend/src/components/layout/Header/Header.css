@@ -13,3 +13,9 @@
   height: 40px;
   width: 40px;
 }
+
+.cart_Item {
+  position: relative;
+  top: -7px;
+  color: rgb(45, 45, 224);
+}

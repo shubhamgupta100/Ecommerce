@@ -8,6 +8,7 @@ export default function Header({ history }) {
   const dispatch = useDispatch();
   const alert = useAlert();
   const { isAuthenticated, user } = useSelector((state) => state.user);
+  const { cartItems } = useSelector((state) => state.cart);
 
   useEffect(() => {
     dispatch(loadUser());
@@ -50,6 +51,7 @@ export default function Header({ history }) {
           <div className="d-flex align-items-center">
             <Link className="text-reset me-3" to="/cart">
               <i className="fas fa-shopping-cart"></i>
+              <span className="cart_Item">{cartItems.length}</span>
             </Link>
             {isAuthenticated ? (
               <>
