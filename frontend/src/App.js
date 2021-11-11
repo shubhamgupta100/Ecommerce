@@ -34,6 +34,7 @@ import OrderList from "./components/Admin/OrderList";
 import ProcessOrder from "./components/Admin/ProcessOrder";
 import UsersList from "./components/Admin/UsersList";
 import UpdateUser from "./components/Admin/UpdateUser";
+import ProductReviews from "./components/Admin/ProductReviews";
 
 function App() {
   const [stripeApiKey, setStripeApiKey] = useState("");
@@ -142,6 +143,18 @@ function App() {
           isAdmin={true}
           component={UpdateUser}
         />
+        <ProtectedRoute
+          exact
+          path="/admin/reviews"
+          isAdmin={true}
+          component={ProductReviews}
+        />
+
+        {/* <Route
+          component={
+            window.location.pathname === "/process/payment" ? null : NotFound
+          }
+        /> */}
       </Router>
     </>
   );
