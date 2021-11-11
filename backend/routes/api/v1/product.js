@@ -37,7 +37,7 @@ router.get("/me/reviews", getProductReviews);
 router.delete("/me/reviews", isAuthenticatedUser, deleteReview);
 
 router.get(
-  "/admin",
+  "/admin/products",
   isAuthenticatedUser,
   authorizeRoles("admin"),
   getAdminProducts
