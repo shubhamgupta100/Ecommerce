@@ -68,7 +68,9 @@ module.exports.forgetPassword = catchAsyncErrors(async (req, res, next) => {
   await user.save({ validateBeforeSave: false });
   //  req.protocol=http || https
   //  req.get('host') = localhost || url
-  const resetPasswordURl = `${process.env.FRONTEND_URL}/password/reset/${resetToken}`;
+  const resetPasswordURl = `${req.protocol}://${req.get(
+    "host"
+  )}/password/reset/${resetToken}`;
 
   const message = `Your  reset password  token is \n\n ${resetPasswordURl} `;
   try {

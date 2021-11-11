@@ -1,14 +1,17 @@
 const express = require("express");
-const dotenv = require("dotenv");
+
 const cookieParser = require("cookie-parser");
 const errorMiddleware = require("./middleware/error");
 const cloudinary = require("cloudinary");
 const bodyParser = require("body-parser");
 const fileUpload = require("express-fileupload");
+const path = require("path");
 
 const app = express();
+if (process.env.NODE_ENV !== "PRODUCTION") {
+  require("dotenv").config({ path: "backend/config/config.env" });
+}
 
-dotenv.config({ path: "backend/config/config.env" });
 const db = require("./config/mongoose");
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_NAME,
@@ -27,6 +30,11 @@ app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(fileUpload());
 app.use("/", require("./routes/index"));
+
+app.use(express.static(path.join(__dirname, "../frontend/build")));
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
+});
 app.use(errorMiddleware);
 
 const server = app.listen(process.env.PORT, (err) => {
