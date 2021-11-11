@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./components/layout/Header/Header";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import WebFont from "webfontloader";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
@@ -60,8 +60,15 @@ function App() {
         <Route exact path="/password/reset/:token" component={ResetPassword} />
         <Route exact path="/cart" component={Cart} />
         <ProtectedRoute exact path="/shipping" component={Shipping} />
+        <Switch>
+          <ProtectedRoute
+            exact
+            path="/order/confirm"
+            component={ConfirmOrder}
+          />
+          <ProtectedRoute exact path="/order/:id" component={OrderDetails} />
+        </Switch>
 
-        <ProtectedRoute exact path="/order/confirm" component={ConfirmOrder} />
         {stripeApiKey && (
           <Elements stripe={loadStripe(stripeApiKey)}>
             <ProtectedRoute exact path="/process/payment" component={Payment} />
@@ -70,7 +77,6 @@ function App() {
         <ProtectedRoute exact path="/success" component={OrderSuccess} />
         <ProtectedRoute exact path="/orders" component={MyOrders} />
 
-        <ProtectedRoute exact path="/order/:id" component={OrderDetails} />
         <ProtectedRoute
           exact
           path="/updatePassword"
