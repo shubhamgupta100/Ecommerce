@@ -10,6 +10,7 @@ const {
   createProductReview,
   getProductReviews,
   deleteReview,
+  getAdminProducts,
 } = require("../../../controller/productController");
 const {
   isAuthenticatedUser,
@@ -34,4 +35,11 @@ router.get("/:id", getProductDetail);
 router.put("/me/reviews", isAuthenticatedUser, createProductReview);
 router.get("/me/reviews", getProductReviews);
 router.delete("/me/reviews", isAuthenticatedUser, deleteReview);
+
+router.get(
+  "/admin",
+  isAuthenticatedUser,
+  authorizeRoles("admin"),
+  getAdminProducts
+);
 module.exports = router;

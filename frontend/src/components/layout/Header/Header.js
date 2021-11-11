@@ -58,7 +58,7 @@ export default function Header({ history }) {
             {isAuthenticated ? (
               <>
                 {user.role === "admin" && (
-                  <Link className="nav-link color" to="/dashboard">
+                  <Link className="nav-link color" to="/admin/dashboard">
                     Dashboard
                   </Link>
                 )}
