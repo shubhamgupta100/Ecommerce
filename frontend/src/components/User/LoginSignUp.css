@@ -1,3 +1,7 @@
+body {
+  font-family: "Ovo" !important;
+}
+
 .LoginSignUpContainer {
   width: 100vw;
   height: 100vh;
@@ -32,11 +36,11 @@
   width: 100%;
 }
 .login_signUp_toggle > p:hover {
-  color: tomato;
+  color: #1266f1;
 }
 
 .LoginSignUpBox > div > button {
-  background-color: tomato;
+  background-color: #1266f1;
   height: 3px;
   width: 50%;
   border: none;
@@ -127,7 +131,7 @@
 .loginBtn,
 .signUpBtn {
   border: none;
-  background-color: tomato;
+  background-color: #1266f1;
   color: white;
   font: 300 0.9vmax "Roboto";
   width: 100%;
@@ -141,7 +145,7 @@
 
 .loginBtn:hover,
 .signUpBtn:hover {
-  background-color: rgb(179, 66, 46);
+  background-color: #4085f3;
 }
 
 .shiftToLeft {

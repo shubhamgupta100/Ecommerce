@@ -1,3 +1,7 @@
+body {
+  font-family: "Ovo" !important;
+}
+
 .myOrdersPage {
   width: 100vw;
   max-width: 100%;
@@ -38,11 +42,11 @@
 }
 
 .myOrdersTable a:hover {
-  color: tomato;
+  color: #1266f1;
 }
 
 .MuiDataGrid-columnHeader {
-  background-color: tomato;
+  background-color: #1266f1;
   padding: 1vmax !important;
 }
 

@@ -1,3 +1,7 @@
+body {
+  font-family: "Ovo" !important;
+}
+
 .confirmOrderPage {
   height: 100vh;
   background-color: white;
@@ -109,7 +113,7 @@
 }
 
 .orderSummary > button {
-  background-color: tomato;
+  background-color: #1266f1;
   color: white;
   width: 100%;
   padding: 1vmax;
@@ -118,10 +122,6 @@
   cursor: pointer;
   transition: 0.5s;
   font: 400 1vmax "Roboto";
-}
-
-.orderSummary > button:hover {
-  background-color: rgb(192, 71, 50);
 }
 
 @media screen and (max-width: 600px) {

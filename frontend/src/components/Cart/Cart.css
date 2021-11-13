@@ -1,3 +1,6 @@
+body {
+  font-family: "Ovo" !important;
+}
 .emptyCart {
   margin: auto;
   text-align: center;
@@ -30,7 +33,7 @@
 }
 
 .cartHeader {
-  background-color: tomato;
+  background-color: #1266f1;
   width: 90%;
   box-sizing: border-box;
   margin: auto;
@@ -112,7 +115,7 @@
   justify-content: flex-end;
 }
 .checkOutBtn > button {
-  background-color: tomato;
+  background-color: #1266f1;
   color: white;
   border: none;
   padding: 0.8vmax 4vmax;

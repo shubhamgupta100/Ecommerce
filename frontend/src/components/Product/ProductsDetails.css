@@ -1,3 +1,7 @@
+body {
+  font-family: "Ovo" !important;
+}
+
 .ProductDetails {
   background-color: rgb(255, 255, 255);
   width: 100vw;
@@ -31,12 +35,12 @@
 
 .detailsBlock-1 > h2 {
   color: rgb(54, 54, 54);
-  font: 600 1.6vmax "Roboto";
+  font: 600 1.6vmax "Ovo";
 }
 
 .detailsBlock-1 > p {
   color: rgba(54, 54, 54, 0.582);
-  font: 200 0.6vmax cursive;
+  font: 200 0.6vmax "Ovo";
 }
 
 .detailsBlock-2 {
@@ -50,7 +54,7 @@
 }
 
 .detailsBlock-2-span {
-  font: 200 0.8vmax cursive;
+  font: 200 0.8vmax "Ovo";
   color: rgba(0, 0, 0, 0.699);
 }
 
@@ -86,7 +90,7 @@
   width: 5vmax;
   text-align: center;
   outline: none;
-  font: 400 1vmax "Roboto";
+  font: 400 1vmax "Ovo";
   color: rgba(0, 0, 0, 0.74);
 }
 
@@ -95,7 +99,7 @@
   cursor: pointer;
   color: white;
   transition: all 0.5s;
-  font: 500 0.7vmax "Roboto";
+  font: 500 0.7vmax "Ovo";
   border-radius: 20px;
   padding: 0.5vmax 2vmax;
   margin: 1vmax;
@@ -110,7 +114,7 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.205);
   padding: 1vmax 0;
   color: rgba(0, 0, 0, 0.651);
-  font: 400 1vmax "Roboto";
+  font: 400 1vmax "Ovo";
   margin: 1vmax 0;
 }
 
@@ -126,7 +130,7 @@
 
 .submitReview {
   border: none;
-  font: 500 0.7vmax "Roboto";
+  font: 500 0.7vmax "Ovo";
   border-radius: 20px;
   padding: 0.6vmax 2vmax;
   margin: 1vmax 0;
@@ -148,12 +152,12 @@
   margin: 1vmax 0;
   outline: none;
   padding: 1rem;
-  font: 300 1rem "Roboto";
+  font: 300 1rem "Ovo";
 }
 
 .reviewsHeading {
   color: #000000be;
-  font: 500 1.4vmax "Roboto";
+  font: 500 1.4vmax "Ovo";
   text-align: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.226);
   padding: 1vmax;
@@ -184,11 +188,11 @@
 }
 .reviewCard > p {
   color: rgba(0, 0, 0, 0.836);
-  font: 600 0.9vmax "Roboto";
+  font: 600 0.9vmax "Ovo";
 }
 .reviewCardComment {
   color: rgba(0, 0, 0, 0.445);
-  font: 300 0.8vmax cursive;
+  font: 300 0.8vmax "Ovo";
 }
 
 .noReviews {

@@ -1,3 +1,7 @@
+body {
+  font-family: "Ovo" !important;
+}
+
 .shippingContainer {
   width: 100vw;
   max-width: 100%;
@@ -18,7 +22,7 @@
 .shippingHeading {
   text-align: center;
   color: rgba(0, 0, 0, 0.664);
-  font: 400 1.3vmax "Roboto";
+  font: 400 1.3vmax "Ovo";
   padding: 1.3vmax;
   border-bottom: 1px solid rgba(0, 0, 0, 0.205);
   width: 50%;
@@ -50,7 +54,7 @@
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.267);
   border-radius: 4px;
-  font: 300 0.9vmax cursive;
+  font: 300 0.9vmax "Ovo";
   outline: none;
 }
 
@@ -63,19 +67,15 @@
 
 .shippingBtn {
   border: none;
-  background-color: tomato;
+  background-color: #1266f1;
   color: white;
-  font: 300 1vmax "Roboto";
+  font: 300 1vmax "Ovo";
   width: 100%;
   padding: 1vmax;
   cursor: pointer;
   transition: all 0.5s;
   outline: none;
   margin: 2vmax;
-}
-
-.shippingBtn:hover {
-  background-color: rgb(179, 66, 46);
 }
 
 @media screen and (max-width: 600px) {
@@ -85,7 +85,7 @@
   }
 
   .shippingHeading {
-    font: 400 6vw "Roboto";
+    font: 400 6vw "Ovo";
     padding: 5vw;
   }
 
@@ -96,7 +96,7 @@
   .shippingForm > div > input,
   .shippingForm > div > select {
     padding: 5vw 10vw;
-    font: 300 4vw cursive;
+    font: 300 4vw "Ovo";
   }
 
   .shippingForm > div > svg {
@@ -105,7 +105,7 @@
   }
 
   .shippingBtn {
-    font: 300 4vw "Roboto";
+    font: 300 4vw "Ovo";
     padding: 4vw;
   }
 }

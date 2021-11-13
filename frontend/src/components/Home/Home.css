@@ -1,12 +1,17 @@
+body {
+  font-family: "Ovo" !important;
+}
+
 .homeHeading {
   text-align: center;
-  font-family: Roboto;
+  font-family: "Ovo";
   font-size: 1.4vmax;
-  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  border-bottom: 3px solid #1266f1;
   width: 20vmax;
   padding: 1vmax;
   margin: 5vmax auto;
   color: rgb(0, 0, 0, 0.7);
+  font-weight: 900;
 }
 
 .container {
@@ -46,11 +51,11 @@
 
 .productCardSpan {
   margin: 0.5vmax;
-  font: 300 0.7vmax "Roboto";
+  font: 300 0.7vmax "Ovo";
 }
 
 .productCard > p {
-  font-family: "Roboto";
+  font-family: "Ovo";
   font-size: 1.2vmax;
   margin: 1vmax 0.5vmax;
   margin-bottom: 0;
@@ -85,6 +90,6 @@
 
   .productCard > div > span {
     margin: 0 0.5vmax;
-    font: 300 1vmax "Roboto";
+    font: 300 1vmax "Ovo";
   }
 }

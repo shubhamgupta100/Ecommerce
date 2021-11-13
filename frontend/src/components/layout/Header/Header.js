@@ -35,7 +35,7 @@ export default function Header({ history }) {
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <Link className="navbar-brand mt-2 mt-lg-0" to="/">
-              <span style={{ fontSize: 25 }}>
+              <span style={{ fontSize: 25, fontFamily: "Metal Mania" }}>
                 <b>Ecommerce</b>
               </span>
             </Link>

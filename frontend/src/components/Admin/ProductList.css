@@ -1,3 +1,7 @@
+body {
+  font-family: "Ovo" !important;
+}
+
 .productListContainer {
   width: 100%;
   box-sizing: border-box;
@@ -36,11 +40,11 @@
 }
 
 .productListTable a:hover {
-  color: tomato;
+  color: #1266f1;
 }
 
 .productListTable button:hover {
-  color: rgb(236, 30, 30);
+  color: 266f1;
 }
 
 .MuiDataGrid-columnHeader div {

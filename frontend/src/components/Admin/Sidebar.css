@@ -1,3 +1,7 @@
+body {
+  font-family: "Ovo" !important;
+}
+
 .sidebar {
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -24,7 +28,7 @@
   transition: all 0.5s;
 }
 .sidebar a:hover {
-  color: tomato;
+  color: #1266f1;
   transform: scale(1.1);
 }
 

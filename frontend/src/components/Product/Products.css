@@ -1,10 +1,14 @@
+body {
+  font-family: "Ovo" !important;
+}
+
 .productsHeading {
   margin: 2vmax auto;
   width: 15vw;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  border-bottom: 3px solid #1266f1;
   padding: 2vmax;
   color: rgba(0, 0, 0, 0.678);
-  font: 500 1.5vmax "Roboto";
+  font: 500 1.5vmax "Ovo";
   text-align: center;
 }
 
@@ -51,7 +55,7 @@
 }
 .page-link {
   text-decoration: none;
-  font: 300 0.7vmax "Roboto";
+  font: 300 0.7vmax "Ovo";
   color: rgb(80, 80, 80);
   transition: all 0.3s;
 }
@@ -86,7 +90,7 @@
 .category-link {
   list-style: none;
   color: rgba(0, 0, 0, 0.61);
-  font: 400 0.8vmax "Roboto";
+  font: 400 0.8vmax "Ovo";
   margin: 0.4vmax;
   cursor: pointer;
   transition: all 0.5s;
@@ -107,9 +111,9 @@
   }
 
   .page-link {
-    font: 300 1.7vmax "Roboto";
+    font: 300 1.7vmax "Ovo";
   }
   .category-link {
-    font: 400 1.8vmax "Roboto";
+    font: 400 1.8vmax "Ovo";
   }
 }

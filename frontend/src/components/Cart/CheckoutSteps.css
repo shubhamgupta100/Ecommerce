@@ -1,3 +1,7 @@
+body {
+  font-family: "Ovo" !important;
+}
+
 .MuiStepConnector-line {
   display: none !important;
 }
@@ -9,5 +13,5 @@
 
 .MuiStepConnector-active,
 .MuiStepConnector-completed {
-  background-color: tomato;
+  background-color: #1266f1;
 }
