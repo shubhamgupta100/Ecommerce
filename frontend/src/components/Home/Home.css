@@ -32,14 +32,17 @@ body {
   margin: 2vmax;
   transition: all 0.5s;
   padding-bottom: 0.5vmax;
-  border: 1px solid whitesmoke;
+  border: 1px solid rgb(223, 217, 217);
   border-radius: 15px;
 }
 
 .productCard > img {
-  width: 16vmax;
+  width: inherit;
+  padding-right: 3px;
+  height: 12vmax;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  overflow-x: hidden;
 }
 
 .productCard > div {
